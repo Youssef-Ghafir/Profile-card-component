@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;300;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    min-height:100vh;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #19A1AD;
+}
+.shape img:first-of-type {
+    position: absolute;
+    max-width: 800px;
+    bottom: calc(100% / 2);
+    right: calc(100% / 2);
+}
+.shape img:last-of-type {
+    position: absolute;
+    max-width: 800px;
+    right: 0;
+    top: 50%;
+}
+@media (max-width:550px) {
+    .shape img:last-of-type {
+        top: 60%;
+        left: calc(100% / 6);
+        max-width: 300px;
+    }
+    .card {
+        overflow: hidden;
+        max-width: 320px !important;
+    }
+}
+.card {
+    max-width: 350px;
+    margin: 0 auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    position: relative;
+    border-radius: 15px;
+    z-index: 9;
+    background-color: #fff;
+}
+.card .image {
+    position: relative;
+    width: 100%;
+}
+.card .image .profile {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    top:100%;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+.card .image .bg {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.card .info-profile {
+    padding: 60px 0 40px;
+    text-align: center;
+}
+.card .info-profile h3 {
+    color: hsl(229, 23%, 23%);
+    margin-top: 1rem;
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+.card .info-profile h3 span {
+    font-weight: normal;
+    color: hsl(0, 0%, 59%);
+    margin-left: 5px;
+    display: inline-block;
+}
+.card .info-profile p {
+    color: hsl(229, 23%, 23%);
+}
+.card .states-profile {
+    padding: 1rem 2.2rem;
+    border-top: 1px solid #E7E7E7;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.card .states-profile h3 {
+    font-weight: bold;
+    color: hsl(229, 23%, 23%);
+    font-size: 1.1rem;
+}
+.card .states-profile h3 span {
+    display: block;
+    margin-top: .2rem;
+    font-weight: normal;
+    font-size: .8rem;
+}
